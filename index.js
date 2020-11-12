@@ -1,8 +1,7 @@
-new fullpage("#fullpage", {
-    //options here
-    autoScrolling: true,
-    scrollHorizontally: true,
-});
+AOS.init();
 
-//methods
-//fullpage_api.setAllowScrolling(false);
+new fullpage("#fullpage", {
+    afterLoad: function () {
+        $(".fp-table.active .aos-init").addClass("aos-animate");
+    },
+});
