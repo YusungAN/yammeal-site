@@ -278,3 +278,24 @@ body {
     align-items: center;
     margin-top: 35vh;
 }
+
+#footer {
+    background-color: #fff4ef;
+}
+
+#google-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#google {
+    width: 350px;
+}
+
+#google-txt {
+    font-size: 3rem;
+    font-family: "GmarketSansBold";
+    color: #e02315;
+}
