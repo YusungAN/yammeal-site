@@ -22,13 +22,35 @@ function scroolEvt() {
                 rline.style.width = `${len}%`;
                 rline.style.marginLeft = `${100 - len}%`;
                 len++;
-                if (len === 75) {
+                if (len === 85) {
                     is4 = true;
                     clearInterval(repeat);
                 }
-            }, 15);
+            }, 8);
         }
     }
 }
+
+$("document").ready(function () {
+    $(window).trigger("orientationchange");
+});
+
+$(window).bind("orientationchange", function (e) {
+    var pc_device = "win16|win32|win64|mac|macintel";
+    // 접속한 디바이스 환경
+    var this_device = navigator.platform;
+    if (this_device) {
+        // MOBILE
+        if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
+            var orientation = window.orientation;
+
+            if (orientation == 90 || orientation == -90) {
+                $(".layer").css("display", "block");
+            } else {
+                $(".layer").css("display", "none");
+            }
+        }
+    }
+});
 
 window.addEventListener("mousewheel", scroolEvt);

@@ -356,7 +356,7 @@ a {
 
 #line-wrap-txt {
     width: 10vw;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: "GmarketSansBold";
     color: #e02315;
     text-align: center;
@@ -394,7 +394,7 @@ a {
     bottom: 5vh;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     #phone {
         position: absolute;
         width: 40%;
@@ -468,6 +468,20 @@ a {
     #big-h2 {
         font-size: 4rem;
         display: flex;
+    }
+
+    #line-wrap-txt {
+        width: 10vw;
+        font-size: 2rem;
+        font-family: "GmarketSansBold";
+        color: #e02315;
+        text-align: center;
+    }
+
+    .div-line {
+        width: 45vw;
+        height: 3px;
+        background-color: #e02315;
     }
 
     .txt-wrap {
@@ -548,6 +562,14 @@ a {
 
     .screen-wrapper {
         flex: 3;
+    }
+
+    #line-wrap-txt {
+        width: 10vw;
+        font-size: 1.5rem;
+        font-family: "GmarketSansBold";
+        color: #e02315;
+        text-align: center;
     }
 
     .mini-h {
@@ -700,7 +722,7 @@ a {
     }
 
     #line-wrap-txt {
-        width: 10vw;
+        width: 15vw;
         font-size: 1rem;
         font-family: "GmarketSansBold";
         color: #e02315;
